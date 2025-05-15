@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "despachante-app/src/main/webapp"
+		},
+		{
+			"path": "despachante-api"
+		},
+		{
+			"path": "."
+		}
+	]
+}

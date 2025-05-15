@@ -1,0 +1,9 @@
+LEIAUTE TREINAMENTO,,,,
+NOME DO CAMPO,TIPO,TAMANHO,OBRIGATÓRIO,DESCRIÇÃO
+nome,STRING,200,SIM,Nome do treinamento
+nomeInstituicao,STRING,200,SIM,Nome da instituição
+tipo,NUMÉRICO,1,SIM,Tipo. 1 para Institucional; 2 para Particular
+dataInicio,STRING,10,SIM,Data início do treinamento. Formato DD/MM/YYYY
+dataFim,STRING,10,SIM,Data fim do treinamento. Formato DD/MM/YYYY
+cargaHoraria,NUMÉRICO,"4,2",SIM,Separador decimal deve ser o caracter ponto (.)
+agrupamento,LISTA,,,Ver LEIAUTE TREINAMENTO_AGRUPAMENTO

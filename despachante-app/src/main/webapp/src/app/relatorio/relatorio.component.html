@@ -1,0 +1,27 @@
+<mat-card class="form-container mat-elevation-z8">
+    <mat-accordion>
+  
+      <div class="tituloCategoria">
+        <mat-card-header>
+          <mat-card-title>Relatórios</mat-card-title>
+        </mat-card-header>
+      </div>
+  
+      <form [formGroup]="formRelatorioParaMPM" (ngSubmit)="onGerarRelatorio()">
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>Removidos para MPM</mat-panel-title>
+          </mat-expansion-panel-header>  
+        </mat-expansion-panel>
+      </form>
+  
+      <form [formGroup]="formRelatorioDoMPM" (ngSubmit)="onGerarRelatorio()">
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>Removidos do MPM</mat-panel-title>
+          </mat-expansion-panel-header>
+        </mat-expansion-panel>
+      </form>
+    
+    </mat-accordion>
+  </mat-card>

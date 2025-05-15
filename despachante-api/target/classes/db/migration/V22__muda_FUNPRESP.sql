@@ -1,0 +1,1 @@
+ALTER TABLE FUNPRESP ALTER COLUMN tipoContribuicao int NOT NULL;

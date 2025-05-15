@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.5.12</version>
+		<relativePath />
+	</parent>
+
+	<repositories>
+		<repository>
+			<id>repoMPM</id>
+			<name>repoMPM</name>
+			<url>https://repo.mpm.mp.br/repository/maven/</url>
+		</repository>
+	</repositories>
+
+	<groupId>br.mp.mpm.despachante</groupId>
+	<artifactId>despachante-app</artifactId>
+	<version>0.0.1</version>
+	<packaging>war</packaging>
+	<name>despachante</name>
+	<description>Compartilhamento de dados corporativos com o MPF</description>
+
+	<properties>
+		<java.version>11</java.version>
+	</properties>
+
+	<profiles>
+		<profile>
+			<id>dev</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<properties>
+				<env>dev</env>
+				<scriptBuildAmbiente>build</scriptBuildAmbiente>
+			</properties>
+		</profile>
+		<profile>
+			<id>homolog</id>
+			<properties>
+				<scriptBuildAmbiente>build-homolog</scriptBuildAmbiente>
+			</properties>
+		</profile>
+		<profile>
+			<id>prod</id>
+			<properties>
+				<scriptBuildAmbiente>build-prod</scriptBuildAmbiente>
+			</properties>
+		</profile>
+	</profiles>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+			<optional>true</optional>
+		</dependency>
+				
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+
+	</dependencies>
+	
+	<build>
+		<!-- nome do arquivo (package) -->
+		<finalName>${project.artifactId}</finalName>
+
+		<plugins>
+
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+
+			<plugin>
+				<!-- https://github.com/eirslett/frontend-maven-plugin -->
+				<groupId>com.github.eirslett</groupId>
+				<artifactId>frontend-maven-plugin</artifactId>
+				<version>1.8.0</version>
+
+				<configuration>
+					<nodeVersion>v10.16.3</nodeVersion>
+					<npmVersion>6.9.0</npmVersion>
+					<workingDirectory>src/main/webapp/</workingDirectory>
+				</configuration>
+
+				<executions>
+					<execution>
+						<id>install node and npm</id>
+						<goals>
+							<goal>install-node-and-npm</goal>
+						</goals>
+					</execution>
+
+					<execution>
+						<id>npm install</id>
+						<goals>
+							<goal>npm</goal>
+						</goals>
+					</execution>
+
+					<execution>
+						<id>build angular</id>
+						<goals>
+							<goal>npm</goal>
+						</goals>
+						<configuration>
+							<arguments>run ${scriptBuildAmbiente}</arguments>
+						</configuration>
+						<phase>generate-resources</phase>
+					</execution>
+
+				</executions>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<configuration>
+					<warSourceExcludes>node_modules/**,node/**</warSourceExcludes>
+					<packagingExcludes>
+						node_modules/**,node/**
+					</packagingExcludes>
+				</configuration>
+			</plugin>
+
+		</plugins>
+	</build>
+</project>

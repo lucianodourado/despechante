@@ -1,0 +1,6 @@
+LEIAUTE TREINAMENTO_AGRUPAMENTO,,,,
+NOME DO CAMPO,TIPO,TAMANHO,OBRIGATÓRIO,DESCRIÇÃO
+cargaHorariaUtilizada,NUMÉRICO,4,2,SIM,Carga horária utilizada. Separador decimal deve ser o caracter ponto (.)
+sequencialAgrupamento,NUMÉRICO,10,SIM,Sequencial do agrupamento
+dataInicio,STRING,10,SIM,Data início do agrupamento. Formato DD/MM/YYYY
+dataFim,STRING,10,SIM,Data fim do agrupamento. Formato DD/MM/YYYY

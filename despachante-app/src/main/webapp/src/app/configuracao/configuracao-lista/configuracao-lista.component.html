@@ -1,0 +1,18 @@
+<mat-card class="form-container mat-elevation-z8">
+  <div class="titulo">
+    <mat-card-header>
+      <mat-card-title>Configuração de URLs e Credenciais</mat-card-title>
+      <mat-card-subtitle>Listar</mat-card-subtitle>      
+    </mat-card-header>
+  </div>
+  <mat-card-content>
+      <mat-selection-list #configuracaoSelect [multiple]="false"
+        (click)="editarRegistro(configuracaoSelect.selectedOptions.selected[0]?.value)">
+        <mat-list-option class="configuracao-ramo" *ngFor="let configuracao of listaConfiguracoes" [value]="configuracao">
+          <div>
+            {{configuracao.ramo}}
+          </div>
+        </mat-list-option>
+      </mat-selection-list>
+  </mat-card-content>
+</mat-card>

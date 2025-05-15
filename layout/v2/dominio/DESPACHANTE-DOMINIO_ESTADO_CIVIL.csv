@@ -1,0 +1,9 @@
+DOMINIO ESTADO_CIVIL,
+ID,DESCRIÇÃO
+1,Solteiro
+2,Casado
+3,Viúvo
+4,Separado
+5,Divorciado
+6,União Estável
+99,Outros

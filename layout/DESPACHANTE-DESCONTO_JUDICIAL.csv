@@ -1,0 +1,15 @@
+LEIAUTE DESCONTO_JUDICIAL,,,,
+NOME DO CAMPO,TIPO,TAMANHO,OBRIGATÓRIO,DESCRIÇÃO
+tipoBaseCalculo,NUMÉRICO,2,SIM,Identificador do tipo de base de cálculo. Ver tabela de domínio TIPO_BASE_CALCULO
+tipoValor,NUMÉRICO,2,SIM,Identificador do tipo de valor. Ver tabela de domínio TIPO_VALOR
+valorTotalDesconto,NUMÉRICO,"10,2",SIM,Valor total a ser descontado
+valorPagar,NUMÉRICO,"10,2",SIM,Valor que falta ser descontado
+valorDesconto,NUMÉRICO,"10,2",SIM,Valor do desconto. Separador decimal deve ser o caracter ponto (.)
+descricaoDescontoJudicial,STRING,4000,NÃO,Descrição do desconto judicial. Texto descritivo de como deve ser feito o cálculo para o desconto.
+cpfCnpjBeneficiario,NUMÉRICO,14,SIM,Número do CPF/CNPJ do beneficiário. Somente números
+nomeBeneficiario,STRING,100,SIM,Nome do beneficiário do crédito
+banco,NUMÉRICO,20,SIM,Número do banco
+agencia,NUMÉRICO,20,SIM,Número da agência
+agenciaDv,STRING,1,NÃO,Dígito verificador da agência
+conta,NUMÉRICO,20,SIM,Número da conta bancária incluindo a operação no caso de CAIXA e SANTANDER
+contaDv,STRING,1,SIM,Dígito verificador da conta

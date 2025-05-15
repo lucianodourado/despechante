@@ -1,0 +1,29 @@
+.form-container {
+    /* margin: 5px; */
+  }
+  
+  .card-subtitulo {
+    color: black;
+  }
+  
+  .card-linha {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    box-shadow: none !important;
+  }
+  
+  .ramo {
+    width: 10%;
+    padding-left: 5px;
+  }
+  
+  .urlToken,
+  .urlPessoa,
+  .urlErro {
+    width: 80%;
+    padding-left: 10px;
+  }
+  
+  ::ng-deep .mat-tooltip {
+    white-space: pre-line !important;
+  }

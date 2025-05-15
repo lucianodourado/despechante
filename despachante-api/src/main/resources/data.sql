@@ -1,0 +1,31 @@
+INSERT INTO TIPO_VALOR(ID_TIPO_VALOR, descricao) VALUES (1,'Quantidade');
+INSERT INTO TIPO_VALOR(ID_TIPO_VALOR, descricao) VALUES (2,'Percentual');
+INSERT INTO TIPO_VALOR(ID_TIPO_VALOR, descricao) VALUES (3,'Valor');
+
+INSERT INTO TIPO_TRIBUTACAO(ID_TIPO_TRIBUTACAO, descricao) VALUES(1,'Regressiva');
+INSERT INTO TIPO_TRIBUTACAO(ID_TIPO_TRIBUTACAO, descricao) VALUES(2,'Progressiva');
+
+INSERT INTO TIPO_REGIME_PREVIDENCIARIO(ID_TIPO_REGIME_PREVIDENCIARIO, descricao) VALUES(1,'RPPS - Regime Próprio de Previdência Social');
+INSERT INTO TIPO_REGIME_PREVIDENCIARIO(ID_TIPO_REGIME_PREVIDENCIARIO, descricao) VALUES(2,'RPPS limitado ao teto do RGPS');
+
+INSERT INTO TIPO_CONTRIBUICAO(ID_TIPO_CONTRIBUICAO, descricao) VALUES(1,'Patrocinada');
+INSERT INTO TIPO_CONTRIBUICAO(ID_TIPO_CONTRIBUICAO, descricao) VALUES(2,'Vinculada');
+INSERT INTO TIPO_CONTRIBUICAO(ID_TIPO_CONTRIBUICAO, descricao) VALUES(3,'Facultativa');
+
+INSERT INTO TIPO_BASE_CALCULO(ID_TIPO_BASE_CALCULO, descricao) VALUES(1,'Valor Líquido');
+INSERT INTO TIPO_BASE_CALCULO(ID_TIPO_BASE_CALCULO, descricao) VALUES(2,'Valor Bruto');
+INSERT INTO TIPO_BASE_CALCULO(ID_TIPO_BASE_CALCULO, descricao) VALUES(3,'Salário Líquido');
+INSERT INTO TIPO_BASE_CALCULO(ID_TIPO_BASE_CALCULO, descricao) VALUES(4,'Valor Fixo');
+INSERT INTO TIPO_BASE_CALCULO(ID_TIPO_BASE_CALCULO, descricao) VALUES(99,'Não Informado');
+
+INSERT INTO TIPO_AGRUPAMENTO(ID_TIPO_AGRUPAMENTO, descricao) VALUES(1,'Função de confiança/cargo em comissão, inclusive em substituição');
+INSERT INTO TIPO_AGRUPAMENTO(ID_TIPO_AGRUPAMENTO, descricao) VALUES(2,'Adicional de qualificação/treinamento');
+INSERT INTO TIPO_AGRUPAMENTO(ID_TIPO_AGRUPAMENTO, descricao) VALUES(3,'Adicional noturno');
+INSERT INTO TIPO_AGRUPAMENTO(ID_TIPO_AGRUPAMENTO, descricao) VALUES(4,'Adicional por serviço extraordinário (hora extra)');
+INSERT INTO TIPO_AGRUPAMENTO(ID_TIPO_AGRUPAMENTO, descricao) VALUES(5,'Gratificação de perícia');
+INSERT INTO TIPO_AGRUPAMENTO(ID_TIPO_AGRUPAMENTO, descricao) VALUES(6,'Gratificação de projeto');
+INSERT INTO TIPO_AGRUPAMENTO(ID_TIPO_AGRUPAMENTO, descricao) VALUES(7,'Gratificação de Segurança');
+INSERT INTO TIPO_AGRUPAMENTO(ID_TIPO_AGRUPAMENTO, descricao) VALUES(8,'Gratificação acumulação de ofício');
+INSERT INTO TIPO_AGRUPAMENTO(ID_TIPO_AGRUPAMENTO, descricao) VALUES(9,'Rubricas pagas em decorrência de local de trabalho (Ad. Atividade penosa, Ad. Insalubridade, Ad. Periculosidade etc)');
+
+

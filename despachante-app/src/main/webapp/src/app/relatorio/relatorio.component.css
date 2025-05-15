@@ -1,0 +1,23 @@
+.form-container {
+    margin: 5px;
+  }
+  
+  .tituloCategoria {
+    margin-top: 15px;
+  }
+  
+  
+  .radioButton {
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .button {
+    vertical-align: text-bottom;
+    margin-top: 10px;
+  }
+  
+  mat-spinner {
+    display: inline-flex;
+  }
+  

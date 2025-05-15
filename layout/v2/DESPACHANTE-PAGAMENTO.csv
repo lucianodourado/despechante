@@ -1,0 +1,20 @@
+LEIAUTE PAGAMENTO,,,,
+NOME DO CAMPO,TIPO,TAMANHO,OBRIGATÓRIO,DESCRIÇÃO
+valorAdicionalQualificacao,NUMÉRICO,2,2,SIM,Adicional de qualificação. Valor percentual do adicional de qualificação. Separador decimal deve ser o caracter ponto (.). 0, 5, 7.5, 10, 12.5. 
+dataExpiracaoAdicional1,STRING,10,NÃO,Formato DD/MM/YYYY. Data de expiração do primeiro agrupamento do adicional de treinamento.
+dataExpiracaoAdicional2,STRING,10,NÃO,Formato DD/MM/YYYY. Data de expiração do segundo agrupamento do adicional de treinamento.
+quintosDecimos,NUMÉRICO,10,2,NÃO,O valor de quintos/décimos que a pessoa recebe. Separador decimal deve ser o caracter ponto (.)
+anuenios,NUMÉRICO,10,NÃO,Quantidade de anuênios que a pessoa recebe.
+dataInicioAbonoPermanecia,STRING,10,NÃO,Data de início do abono permanência. Formato DD/MM/YYYY
+vpni,NUMÉRICO,10,2,NÃO,O valor de VPNI que a pessoa recebe. Separador decimal deve ser o caracter ponto (.)
+auxilioAlimentacao,NUMÉRICO,10,2,NÃO,O valor do auxílio alimentação que a pessoa recebe. Separador decimal deve ser o caracter ponto (.)
+feriasAnoExercicio,NUMÉRICO,4,SIM,Ano de exercício do período aquisitivo com saldo a ser usufruído no órgão de destino
+feriasSaldo,NUMÉRICO,3,SIM,Quantidade de dias de férias pendente de usufruto.
+feriasUmTerco,NUMÉRICO,1,SIM,Informa se foi recebido 1/3 de férias no ramo de origem. 1 para SIM e 0 para NÂO
+feriasDataAdiantamento,STRING,10,SIM,Data do adiantamento de férias. Formato DD/MM/YYYY.
+feriasAdiantamentoSaldo,NUMÉRICO,10,2,NÃO,Valor do saldo de adiantamento de férias. Separador decimal deve ser o caracter ponto (.)
+feriasAdiantamentoParcela,NUMÉRICO,1,SIM,Quantidade parcelas do adiantamento de férias
+feriasAdiantamentoIr,NUMÉRICO,1,NAO,Indicativo de incidência de IR. 1 para SIM e 0 para NÂO
+gratificacaoNatalinaAdiantamento,NUMÉRICO,10,2,NAO,Valor de adiantamento de gratificação natalina pago pelo ramo de origem. Separador decimal deve ser o caracter ponto (.)
+dataIsencaoIr,STRING,10,NAO,Data de início da isenção de IR. Formato DD/MM/YYYY.
+tipoIsencaoIr,NUMÉRICO,1,NÃO,Tipo de isenção de IR 1 – Isenção IR sobre abono permanência; 2 – Isenção IR sobre remuneração.

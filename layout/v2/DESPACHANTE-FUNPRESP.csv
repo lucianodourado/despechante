@@ -1,0 +1,8 @@
+LEIAUTE FUNPRESP,,,,
+NOME DO CAMPO,TIPO,TAMANHO,OBRIGATÓRIO,DESCRIÇÃO
+tipoContribuicao,NUMÉRICO,2,SIM,Identificador do tipo de contribuição. Ver tabela de domínio TIPO_CONTRIBUICAO
+tipoTributacao,NUMÉRICO,2,SIM,Identificador do tipo de tributação. Ver tabela de domínio TIPO_TRIBUTACAO
+percentualDesconto,NUMÉRICO,10,2,NÃO,O valor percentual do desconto da funpresp. Separador decimal deve ser o caracter ponto (.)
+quantidadeUrp,NUMÉRICO,10,NÃO,Quantidade de URP para efeito de cálculo
+valorBaseCalculo,NUMÉRICO,10,2,NÃO,Valor base para o cálculo do desconto, caso exista. Separador decimal deve ser o caracter ponto (.)
+dataAdesao,STRING,10,SIM,Data de adesão à funpresp.Formato DD/MM/YYYY. 

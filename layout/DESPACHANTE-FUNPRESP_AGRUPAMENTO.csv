@@ -1,0 +1,4 @@
+LEIAUTE FUNPRESP_AGRUPAMENTO,,,,
+NOME DO CAMPO,TIPO,TAMANHO,OBRIGATÓRIO,DESCRIÇÃO
+tipoAgrupamento,NUMÉRICO,2,SIM,Tipo de agrupamento. Ver tabela de domínio TIPO_AGRUPAMENTO
+dataInicio,STRING,10,SIM,Data de início. Formato DD/MM/YYYY.

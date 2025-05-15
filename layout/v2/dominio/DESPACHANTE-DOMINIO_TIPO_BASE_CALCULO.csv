@@ -1,0 +1,7 @@
+DOMINIO TIPO_BASE_CALCULO,
+ID,DESCRIÇÃO
+1,Valor Líquido
+2,Valor Bruto
+3,Salário Líquido
+4,Valor Fixo
+99,Não Informado

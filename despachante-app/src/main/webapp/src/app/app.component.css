@@ -1,0 +1,86 @@
+.barraSistema {
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: left;
+  /* align horizontal */
+  align-items: right;
+  /* align vertical */
+  /*  background-color: #666666; */
+}
+
+.tituloSistema {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  line-height: 40px;
+  vertical-align: middle;
+  font-size: 20px;
+}
+
+.logoBarra {
+  padding-left: 10px;
+  padding-right: 10px;
+  vertical-align: middle;
+}
+
+.menuIcon {
+  vertical-align: middle;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+mat-sidenav {
+  background-color: #424242; 
+  color: white;
+ 
+}
+
+.onde-estou-procuradoria {
+  position: fixed;
+  top: 1rem;
+  right: 12rem;
+  z-index: 2;
+  width: auto;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.menuUsuario {
+  position: fixed;
+  top: 1rem;
+  right: 0rem;
+  z-index: 2;
+  width: 10%;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.mat-icon-user {
+  margin: 2px;
+}
+
+.mat-progress-spinner{
+  display: float;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.overlay{
+  height:100vh;
+  width:100%;
+  background-color:rgba(0, 0, 0, 0.286);
+  z-index:    10;
+  top:        0; 
+  left:       0; 
+  position:   fixed;
+}
+
+
+
+

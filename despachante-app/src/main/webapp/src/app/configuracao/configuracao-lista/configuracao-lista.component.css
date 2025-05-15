@@ -1,0 +1,23 @@
+.mpm-panel-container {
+  /* margin: 5px; */
+}
+
+.form-container {
+  margin: 5px;
+}
+
+.titulo {
+  margin-top: 15px;
+}
+
+.configuracao-ramo {
+  display: flex;
+  border-width: 0;
+  border-bottom-width: 1px;
+  border-style: solid;
+  align-items: center;
+  box-sizing: border-box; 
+  margin: 5px;  
+  justify-content: center;
+  align-content: center;
+}

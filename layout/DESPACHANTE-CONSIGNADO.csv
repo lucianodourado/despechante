@@ -1,0 +1,8 @@
+LEIAUTE CONSIGNADO,,,,
+NOME DO CAMPO,TIPO,TAMANHO,OBRIGATÓRIO,DESCRIÇÃO
+cnpj,STRING,14,SIM,CNPJ. Somente números. Valor fixo com 14 dígitos.
+nomeInstituicao,STRING,100,SIM,Nome da instituição contratada para realização do empréstimo consignado
+percentualMargem,NUMÉRICO,"10,2",SIM,O valor percentual da margem utilizada. Separador decimal deve ser o caracter ponto (.)
+numeroParcelasContratadas,NUMÉRICO,10,SIM,Número de parcelas contratadas
+numeroParcelasPagar,NUMÉRICO,10,SIM,Número de parcelas a pagar
+valorParcela,NUMÉRICO,"10,2",SIM,Valor de cada parcela. Separador decimal deve ser o caracter ponto (.)

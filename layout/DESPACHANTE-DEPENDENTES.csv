@@ -1,0 +1,14 @@
+LEIAUTE DEPENDENTES,,,,
+NOME DO CAMPO,TIPO,TAMANHO,OBRIGATÓRIO,DESCRIÇÃO
+nome,STRING,100,SIM,Nome do depenente.
+dataNascimento,STRING,10,NÃO,Data de nascimento. Formato DD/MM/YYYY
+grauParentesco,STRING,100,SIM,Grau de parentesco com a pessoa
+sexo,NUMÉRICO,1,SIM,Sexo. 1 para MASCULINO; 2 para FEMININO
+nomeMae,STRING,100,NÃO,Nome da mãe do dependente
+cpf,NUMÉRICO,11,SIM,CPF. Somente números. Valor fixo com 11 dígitos.
+rg,STRING,100,NÃO,RG
+rgOrgaoEmissor,STRING,100,NÃO,Órgão de emissão do RG
+rgUfEmissao,STRING,2,NÃO,UF de emissão do RG
+rgDataEmissao,STRING,10,NÃO,Data de emissão do RG. Formato DD/MM/YYYY
+dataVigenciaAuxilioPreEscolar,STRING,10,NÃO,Data de vigência do auxílio pré-escolar. Formato DD/MM/YYYY
+pensaoAlimenticia,LISTA,,,Ver LEIAUTE PENSAO_ALIMENTICIA

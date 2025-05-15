@@ -1,0 +1,44 @@
+<mat-toolbar color="primary" *ngIf="showTitulo()" class="tituloSistema">
+  <mat-toolbar-row>
+    <img src="assets/img/logo_sistema.png" width="30" />
+    <h1><span style="margin-left: 10px">Despachante</span></h1>
+    <button matTooltip="Onde estou?" mat-icon-button  class="onde-estou-procuradoria" *ngIf="showMenu()">
+      <mat-icon class="mat-icon-user">place</mat-icon>
+      <span>{{authService.usuario.procuradoriaSiglaFormatado}}</span>    
+    </button>
+    <button mat-icon-button [matMenuTriggerFor]="menuUsuario" class="menuUsuario" *ngIf="showMenu()">
+      <mat-icon class="mat-icon-user">account_circle</mat-icon>
+      <span>{{authService.usuario.username}}</span>
+      <mat-icon>arrow_drop_down</mat-icon>
+    </button>
+    <mat-menu #menuUsuario="matMenu">
+      <button mat-menu-item>
+        <mpm-theme-select class="theme-select" *ngIf="showMenu()"></mpm-theme-select>
+      </button>
+      <button mat-menu-item routerLink="/logout">
+        <mat-icon>exit_to_app</mat-icon>
+        <span>Sair</span>
+      </button>      
+    </mat-menu>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+
+<mat-sidenav-container>
+  <mat-sidenav #menuEsquerdo mode="side" *ngIf="showMenu()" opened="true" [disableClose]="true">
+    <mpm-menu [navBar]='menuEsquerdo'></mpm-menu>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <div style="height: 88vh;">
+      <router-outlet></router-outlet>
+      <div class="overlay" *ngIf="showSpinner()">
+        <div class="center">
+          <mat-progress-spinner mode="indeterminate" *ngIf="showSpinner()"  >
+          </mat-progress-spinner>
+        </div>
+      </div>
+    </div>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>

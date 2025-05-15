@@ -1,0 +1,5 @@
+LEIAUTE SINDICATO_ASSOCIACAO,,,,
+NOME DO CAMPO,TIPO,TAMANHO,OBRIGATÓRIO,DESCRIÇÃO
+dataInicioVigencia,STRING,10,SIM,Data de início da vigência da contribuição para o sindicato/associação
+cnpj,NUMÉRICO,14,SIM,CNPJ. Somente números. Valor fixo com 14 dígitos.
+nomeSindicatoAssociacao,STRING,100,SIM,Nome do sindicato/associação

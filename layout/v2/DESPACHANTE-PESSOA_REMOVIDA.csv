@@ -1,0 +1,81 @@
+LEIAUTE PESSOA_REMOVIDA,,,,
+NOME DO CAMPO,TIPO,TAMANHO,OBRIGATÓRIO,DESCRIÇÃO
+matricula,NUMÉRICO,25,SIM,Identificador da pessoa no ramo. Pode ser a matrícula. Não pode haver dois registros com o mesmo código.
+nomeCivil,STRING,100,SIM,Nome Civil completo da pessoa
+nomeSocial,STRING,100,NÃO,Nome social da pessoa, caso exista
+dataNascimento,STRING,10,SIM,Data de Nascimento. Formato DD/MM/YYYY
+sexo,NUMÉRICO,1,SIM,Sexo. 1 para MASCULINO; 2 para FEMININO
+identidadeGenero,NUMÉRICO,3,NÃO,Identidade de gênero. Ver tabela de domínio IDENTIDADE_GENERO
+enderecoCep,NUMÉRICO,8,NÃO,Endereço CEP
+enderecoResidencial,STRING,100,SIM,Endereço Residencial
+enderecoNumero,STRING,100,NÃO,Endereço Número
+enderecoComplemento,STRING,100,NÃO,Endereço Complemento
+enderecoBairro,STRING,100,SIM,Endereço Bairro
+enderecoUf,STRING,2,SIM,Endereço UF
+enderecoMunicipio,STRING,100,NÃO,Endereço Município
+enderecoPais,STRING,100,SIM,Endereço País
+enderecoCodigoIbge,NUMÉRICO,10,SIM,Código do IBGE do endereço da pessoa
+emailParticular,STRING,100,NÃO,Email particular
+estadoCivil,NUMÉRICO,2,SIM,Estado civil. Ver tabela de domínio ESTADO_CIVIL
+uniaoEstavel,NUMÉRICO,1,SIM,União estável. 1 para SIM; 0 para NÃO
+nomeConjuge,STRING,100,NÃO,Nome do Cônjuge
+dataCasamento,STRING,10,NÃO,Data de Casamento. Formato DD/MM/YYYY
+raca,NUMÉRICO,2,SIM,Código da Raça. Ver tabela de domínio RACA
+doadorSangue,NUMÉRICO,1,SIM,Doador de sangue. 0 para NÃO; 1 para SIM;
+tipoSanguineo,STRING,2,SIM,Tipo sanguíneo. O, A, AB
+fatorRh,STRING,1,SIM,Fator RH. P ou N
+pne,NUMÉRICO,1,SIM,Portador de necessidades especiais. 0 para NÃO; 1 para SIM;
+naturalidade,STRING,100,SIM,Naturalidade
+naturalidadeUf,STRING,2,SIM,Naturalidade UF
+nacionalidade,STRING,100,SIM,Nacionalidade
+paisNascimento,STRING,100,SIM,País de nascimento
+grauInstrucao,NUMÉRICO,2,SIM,Grau de instrução. Ver tabela de domínio GRAU_INSTRUCAO
+formacaoProfissional,STRING,200,NÃO,Formação profissional. Descrição da formação profissional da pessoa
+cargo,STRING,20,SIM,Código do cargo. Ver tabela de domínio CARGO
+cargoNivel,STRING,2,SIM,AN para ANALISTA; TC para TÉCNICO
+cargoClasse,STRING,1,SIM,Classe do cargo. A, B, C
+cargoPadrao,STRING,2,SIM,Padrão do cargo. Valores de 1 a 13
+dataUltimaProgressao,STRING,10,SIM,Data da última vigência de promoção/progressão. Formato DD/MM/YYYY
+dataNomeacao,STRING,10,SIM,Data de nomeação. Formato DD/MM/YYYY
+dataExercicio,STRING,10,SIM,Data de exercício. Formato DD/MM/YYYY
+dataPosse,STRING,10,SIM,Data de posse. Formato DD/MM/YYYY
+dataExercicioIninterruptoMpu,STRING,10,SIM,Data de exercício ininterrupto no MPU. Formato DD/MM/YYYY. A data mais remota dentre os cargos já ocupados pelo servidor, desde que não tenha havido interrupção entre um cargo e outro
+unidadeLotacaoRemovido,STRING,200,NÃO,Descrição da unidade de lotação para qual o servidor foi removido.
+regimePrevidenciario,NUMÉRICO,2,SIM,Tipo de regime previdenciário. Ver tabela de domínio TP_REGIME_PREVIDENCIARIO
+cpf,NUMÉRICO,11,SIM,CPF. Somente números. Valor fixo com 11 dígitos.
+rgNumero,STRING,100,SIM,RG
+rgOrgao,STRING,100,SIM,Órgão do RG
+rgDataEmissao,STRING,10,SIM,Data de emissão do RG. Formato DD/MM/YYYY
+rgUfEmissao,STRING,2,SIM,UF de emissão do RG
+tituloNumero,NUMÉRICO,20,SIM,Título de eleitor
+tituloZona,STRING,10,SIM,Zona do título
+tituloSecao,STRING,10,SIM,Seção do título
+tituloUf,STRING,2,SIM,UF de emissão do título
+tituloDataEmissao,STRING,10,SIM,Data de emissão do título. Formato DD/MM/YYYY
+certificadoMilitar,NUMÉRICO,20,NÃO,Certificado militar
+certificadoMilitarDataEmissao,STRING,10,NÃO,Data de emissão do certificado militar. Formato DD/MM/YYYY
+cnh,NUMÉRICO,20,NÃO,CNH
+cnhCategoria,STRING,2,NÃO,Categoria do CNH. Exemplos A, B, C, D, E
+cnhDataEmissao,STRING,10,NÃO,Data de emissão do CNH. Formato DD/MM/YYYY
+cnhDataValidade,STRING,10,NÃO,Data de validade do CNH. Formato DD/MM/YYYY
+cnhUfEmissao,STRING,2,NÃO,UF de emissão do CNH
+registroProfissional,STRING,20,NÃO,Registro profissional
+registroProfissionalTipo,STRING,100,NÃO,Tipo de registro profissional
+registroProfissionalDataEmissao,STRING,10,NÃO,Data de emissão do registro profissional. Formato DD/MM/YYYY
+registroProfissionalUfEmissao,STRING,2,NÃO,UF de emissão do registro profissional
+pisPasep,NUMÉRICO,20,SIM,Número do PIS/PASEP
+primeiroEmprego,NUMÉRICO,1,SIM,Primeiro emprego? 0 para NÃO; 1 para SIM;
+recebeAposentadoria,NUMÉRICO,1,SIM,Recebe aposentadoria? 0 para NÃO; 1 para SIM;
+banco,NUMÉRICO,20,SIM,Número do banco
+agencia,NUMÉRICO,20,SIM,Número da agência
+agenciaDv,STRING,1,SIM,Dígito verificador da agência. Número da conta bancária incluindo a operação no caso de CAIXA e SANTANDER
+conta,NUMÉRICO,20,SIM,Número da conta
+contaDv,STRING,1,SIM,Dígito verificador da conta
+treinamento,LISTA,,,Ver LEIAUTE TREINAMENTO
+dependente,LISTA,,,Ver LEIAUTE DEPENDENTE
+pagamento,LISTA,,,Ver LEIAUTE PAGAMENTO
+consignado,LISTA,,,Ver LEIAUTE CONSIGNADO
+sindicatoAssociacao,LISTA,,,Ver LEIAUTE SINDICATO_ASSOCIAÇÃO
+descontoJudicial,LISTA,,,Ver LEIAUTE DESCONTO_JUDICIAL
+funpresp,LISTA,,,Ver LEIAUTE FUNPRESP
+funprespAgrupamento,LISTA,,,Ver LEIAUTE FUNPRESP_AGRUPAMENTO

@@ -1,0 +1,33 @@
+.highlight-row:hover {
+    background: #dedede;
+  }
+  
+  .highlight-row:active {
+    background: #dedede;
+  }
+  
+  .form-container {
+    margin: 5px;
+  }
+  
+  .filter-container {
+    width: 35%;
+    padding-left: 20px;
+  }
+  
+  
+  /* WIDTH*/
+  .mat-column-nome {
+    flex: 30;
+  }
+  
+  .mat-column-matricula,
+  .mat-column-ramo, 
+  .mat-column-cpf {
+    flex: 15;
+  }
+  
+  .mat-column-acao {
+    flex: 10;
+  }
+  
