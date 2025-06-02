@@ -1,5 +1,5 @@
 # stage build
-FROM repo.mpm.mp.br/base/jdk:11-maven3.6 AS dev
+FROM maven AS dev
    
     ARG MVN_PROFILE
    
@@ -10,7 +10,7 @@ FROM repo.mpm.mp.br/base/jdk:11-maven3.6 AS dev
     RUN mvn --no-transfer-progress clean package $MVN_PROFILE
 
 # stage publish imagem
-FROM repo.mpm.mp.br/base/jdk:11 AS publish
+FROM openjdk AS publish
    
     WORKDIR /var/app
    
