@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.mp.mpm.acasisclient.security.token.TokenService;
+// import br.mp.mpm.acasisclient.security.token.TokenService;
 import io.swagger.annotations.Api;
 
 @RestController
@@ -17,25 +17,23 @@ import io.swagger.annotations.Api;
 @Api(value = "authController")
 @CrossOrigin
 public class AuthController {
+/* 
+ * 
+ private TokenService tokenService;
+ 
+ @Autowired	
+ public void setTokenService(@Lazy TokenService tokenService) {
+	this.tokenService = tokenService;
+}
 
-    private TokenService tokenService;
-    
-    @Autowired	
-	public void setTokenService(@Lazy TokenService tokenService) {
-		this.tokenService = tokenService;
-	}
-	
-	public TokenService getTokenService() {
-		return tokenService;
-	}
-    
+public TokenService getTokenService() {
+	return tokenService;
+}
+
+*/
 	@PostMapping
 	public ResponseEntity<String> obterToken(@RequestParam(required = true) String usuario, 
 			@RequestParam(required = true) String senha) {
-		String entity = getTokenService().getRedeMPMToken(usuario, senha);
-		if (entity != null) {
-			return ResponseEntity.ok(entity);
-		}
 		return ResponseEntity.notFound().build();
 	}
 	

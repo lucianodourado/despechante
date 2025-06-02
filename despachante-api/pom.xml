@@ -110,11 +110,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
-		<dependency>
+		<!-- <dependency>
 			<groupId>br.mp.mpm</groupId>
 			<artifactId>acasisclient</artifactId>
 			<version>0.0.11</version>
-		</dependency>
+		</dependency> -->
 
 		<!-- Pull in as a traditional dependency -->
 		<dependency>

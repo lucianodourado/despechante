@@ -27,7 +27,6 @@
         "@angular/router": "~11.2.8",
         "@angular/service-worker": "~11.2.8",
         "@kolkov/angular-editor": "^1.1.4",
-        "@mpm/ng": "^10.3.3",
         "despachante": "file:",
         "material-icons": "^0.6.1",
         "moment": "^2.24.0",

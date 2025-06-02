@@ -11,20 +11,20 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.authentication.AnonymousAuthenticationFilter;
 
-import br.mp.mpm.acasisclient.authentication.mpm.filter.RedeMpmTokenFilter;
-import br.mp.mpm.acasisclient.security.token.TokenService;
+// import br.mp.mpm.acasisclient.authentication.mpm.filter.RedeMpmTokenFilter;
+// import br.mp.mpm.acasisclient.security.token.TokenService;
 
 @EnableWebSecurity
 @Configuration
 public class SecurityConfigurations extends WebSecurityConfigurerAdapter {
 
-	@Autowired
-	private TokenService tokenService;
+	// @Autowired
+	// private TokenService tokenService;
 	
-	@Bean
-	protected TokenService tokenBean() {
-		return new TokenService();
-	}
+	// @Bean
+	// protected TokenService tokenBean() {
+	// 	return new TokenService();
+	// }
 	
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
@@ -37,8 +37,8 @@ public class SecurityConfigurations extends WebSecurityConfigurerAdapter {
 				.antMatchers(HttpMethod.PUT, "/internal/v1/**").permitAll()				
 				.anyRequest().fullyAuthenticated()
 				.and()
-				.addFilterBefore(new RedeMpmTokenFilter(tokenService),
-						AnonymousAuthenticationFilter.class)				
+				//.addFilterBefore(new RedeMpmTokenFilter(tokenService),
+				//		AnonymousAuthenticationFilter.class)				
 				.csrf().disable().
 					sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and();
 	}
